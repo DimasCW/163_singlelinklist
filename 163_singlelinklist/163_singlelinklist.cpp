@@ -74,11 +74,9 @@ bool deletenode(int nim){
 };
 
 bool listempty() {
-	if (listempty()) {
-		cout << "list kosong" << endl;
-		system("pause");
-		system("cls");
-		return;
+	if (start == NULL)
+		return true;
+
 	}
 	else {
 		node* currentnode = start;
@@ -92,5 +90,12 @@ bool listempty() {
 
 void searchadata() {
 
-}
+};
 
+int main() {
+	addnote();
+	searchnode();
+	deletenode();
+
+
+}
