@@ -81,7 +81,19 @@ bool listEmpty() {
 }
 
 void traverse() {
-	
+	if (listEmpty()) {
+		cout << "List Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	else {
+		node* currentnode = start;
+		while (currentnode != NULL) {
+			cout << "NIM : " << currentnode->nomhs << "', Nama : " << currentnode->name << endl;
+			currentnode = currentnode->next;
+		}
+	}
 }
 
 void searchadata() {
@@ -89,9 +101,6 @@ void searchadata() {
 };
 
 int main() {
-	addnote();
-	searchnode();
-	deletenode();
 
 
 }
