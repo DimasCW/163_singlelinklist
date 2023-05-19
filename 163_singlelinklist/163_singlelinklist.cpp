@@ -64,8 +64,30 @@ bool searchnode(int nim, node* current, node* previous){
 bool deletenode(int nim){
 	node* current = start;
 	node* previous = start;
-	if (searchnode(nim, previous, current) == false) {
+	if (searchnode(nim, previous, current) == false) 
 		return false;
-	}
+	previous->next = current->;
+	if (current == start)
+		start = currrent->next;
+	return true;
+	
 };
+
+bool listempty() {
+	if (listempty()) {
+		cout << "list kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	else {
+		node* currentnode = start;
+		while (currentnode != NULL) {
+			cout << "nim : " << currentnode->nomhs << ", nama: " << currentnode->name << endl;
+			currentnode = currentnode->next;
+		}
+		cout << endl;
+	}
+}
+
 
