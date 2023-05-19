@@ -96,9 +96,29 @@ void traverse() {
 	}
 }
 
-void searchadata() {
+void searchData() {
+	if (listEmpty()) {
+		cout << "LIst Kosong" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	else {
+		int nim;
+		cout << "Masukkan NIM : ";
+		cin >> nim;
+		node* currentnode = start;
+		while (currentnode != NULL) {
+			if (currentnode->nomhs == nim) {
+				cout << "NIM : " << currentnode->nomhs << ", Nama : " << currentnode->name << endl;
+				return;
+			}
+			currentnode = currentnode->next;
+		}
+		cout << "Data tidak ditemukan" << endl;
+	}
 
-};
+}
 
 int main() {
 
