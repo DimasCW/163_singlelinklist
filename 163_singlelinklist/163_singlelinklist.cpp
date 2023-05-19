@@ -46,7 +46,7 @@ void addnote(){
 bool searchnode(int nim, node* current, node* previous){
 	previous = start;
 	current = start;
-	while {
+	while (current != NULL && nim >= current->nomhs){
 		previous = start;
 		current = start;
 	}
@@ -66,9 +66,9 @@ bool deletenode(int nim){
 	node* previous = start;
 	if (searchnode(nim, previous, current) == false) 
 		return false;
-	previous->next = current->;
+	previous->next = current->next;
 	if (current == start)
-		start = currrent->next;
+		start = current->next;
 	return true;
 	
 };
@@ -90,4 +90,7 @@ bool listempty() {
 	}
 }
 
+void searchadata() {
+
+}
 
