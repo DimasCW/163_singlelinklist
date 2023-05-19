@@ -47,7 +47,8 @@ bool searchnode(int nim, node* current, node* previous){
 	previous = start;
 	current = start;
 	while {
-
+		previous = start;
+		current = start;
 	}
 };
 
