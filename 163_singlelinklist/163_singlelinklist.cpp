@@ -37,12 +37,18 @@ void addnote(){
 			previous = current;
 			current = current->next;
 		}
+		nodebaru->next = current;
+		previous->next = nodebaru;
 	}
 
 }
 
-void{
+bool searchnode(int nim, node* current, node* previous){
+	previous = start;
+	current = start;
+	while {
 
+	}
 };
 
 void{
