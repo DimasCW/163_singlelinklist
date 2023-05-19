@@ -50,9 +50,22 @@ bool searchnode(int nim, node* current, node* previous){
 		previous = start;
 		current = start;
 	}
+	if (current == NULL) {
+		return false;
+	}
+	else if (current->nomhs == nim) {
+		return true;
+	}
+	else {
+		return false;
+	}
 };
 
-void{
-
+bool deletenode(int nim){
+	node* current = start;
+	node* previous = start;
+	if (searchnode(nim, previous, current) == false) {
+		return false;
+	}
 };
 
